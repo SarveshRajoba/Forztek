@@ -20,7 +20,6 @@ const DiamondCard = ({ imageSrc, title }) => {
           className="w-full h-full object-cover transform md:-rotate-45 rounded-xl transition-all duration-300 ease-in-out"
         />
       </div>
-
       {/* Title */}
       <div className="mt-4 sm:mt-6 lg:mt-14">
         <h2
