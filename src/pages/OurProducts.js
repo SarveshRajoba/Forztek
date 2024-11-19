@@ -1,7 +1,6 @@
 import React from "react";
 import Flashcard from "../components/Flashcard";
 import logo from "../assets/our_product.png";
-
 const OurProducts = () => {
   return (
     <div className=" bg-forztek-blue h-screen flex items-center justify-between px-10">
