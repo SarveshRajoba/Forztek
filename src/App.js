@@ -1,15 +1,17 @@
 import './App.css';
-import Flashcard from './components/Flashcard';
-import OurOffering from './pages/our_offering/OurOffering';
-import OurProducts from './pages/OurProducts';
+import AboutUs from './AboutUs';
+import ContactPage from './ContactPage';
+import SegmentExpertise from './SegmentExpertise';
 
 function App() {
   return (
     <div className="App">
-      <OurOffering/>  
-     </div>
+      // <AboutUs />
+      // <SegmentExpertise />
+      // <ContactPage />
+
+    </div>
   );
 }
 
 export default App;
-
