@@ -6,9 +6,9 @@ import SegmentExpertise from './SegmentExpertise';
 function App() {
   return (
     <div className="App">
-      <AboutUs />
-      <SegmentExpertise />
-      <ContactPage />
+      // <AboutUs />
+      // <SegmentExpertise />
+      // <ContactPage />
 
     </div>
   );
