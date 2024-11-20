@@ -1,6 +1,6 @@
 import React from "react";
 import Flashcard from "../components/Flashcard";
-import logo from "../assets/our_product.png";
+
 const OurProducts = () => {
   return (
     <div className=" bg-forztek-blue h-screen flex items-center justify-between px-10">
@@ -9,9 +9,8 @@ const OurProducts = () => {
           <span class="block">Our</span>
           <span class="block">Products</span>
         </div>
-        <img src={logo} className="mx-auto" />
+        <img src={'/our_product.png'} alt="ourproducts" className="mx-auto" />
       </div>
-
       <div className="mr-28">
         <Flashcard />
       </div>

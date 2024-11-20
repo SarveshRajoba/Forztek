@@ -32,10 +32,3 @@ const DiamondCard = ({ imageSrc, title }) => {
 };
 
 export default DiamondCard;
-
-
-
-
-
-
-

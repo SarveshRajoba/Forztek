@@ -1,15 +1,13 @@
 import React from 'react';
 import DiamondCard from '../components/DiamondCard';
-import image1 from '../assets/Photo1.png';
-import image2 from '../assets/Photo2.png';
 
 const offeringData = [
   {
-    imageSrc: image1,
+    imageSrc: '/Photo1.png',
     title: 'Industrial Product Design,\n Manufacturing & Assembly',
   },
   {
-    imageSrc: image2,
+    imageSrc: '/Photo2.png',
     title: 'Engineering Services \n& Training',
   },
 ];
@@ -38,11 +36,4 @@ const OurOffering = () => {
 };
 
 export default OurOffering;
-
-
-
-
-
-
-
 
