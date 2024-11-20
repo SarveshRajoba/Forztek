@@ -3,11 +3,6 @@ import classNames from "classnames";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import p1 from "../assets/product1.png";
-import p2 from "../assets/product2.png";
-import p3 from "../assets/product3.png";
-import p4 from "../assets/product4.png";
-import p5 from "../assets/product5.png";
 
 
 function Flashcard() {
@@ -103,27 +98,27 @@ function Flashcard() {
 const data = [
   {
     name: `Lubrication solutions`,
-    img: p1,
+    img: '/product1.png',
     review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
   },
   {
     name: ` High speed  test bench`,
-    img: p2,
+    img: '/product2.png',
     review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
   },
   {
     name: `Product3`,
-    img: p3,
+    img: '/product3.png',
     review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
   },
   {
     name: `Product4`,
-    img: p4,
+    img: '/product4.png',
     review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
   },
   {
     name: `Product5`,
-    img: p5,
+    img: '/product5.png',
     review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
   },
 ];
