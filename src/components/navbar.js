@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="fixed top-0 left-0 w-full bg-forztek-blue text-white flex items-center justify-between px-8 py-3 z-50">
+      <nav className="fixed top-0 left-0 w-full backdrop-filter backdrop-blur-lg text-white flex items-center justify-between px-8 py-3 z-50">
         <div className="flex items-center">
           <img src="/logo.jpg" alt="Forztek Logo" className="h-10 w-auto" />
         </div>
