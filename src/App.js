@@ -1,15 +1,19 @@
 import './App.css';
-import AboutUs from './AboutUs';
-import ContactPage from './ContactPage';
+import AboutUs from './pages/AboutUs';
+import ContactPage from './pages/ContactPage';
 import SegmentExpertise from './SegmentExpertise';
+import OurProducts from './pages/OurProducts';
+ 
+import OurOffering from './pages/OurOffering';
 
 function App() {
   return (
     <div className="App">
-      // <AboutUs />
-      // <SegmentExpertise />
-      // <ContactPage />
-
+      <AboutUs />
+      <OurOffering/>
+      <SegmentExpertise />
+      <OurProducts/>
+      <ContactPage />
     </div>
   );
 }

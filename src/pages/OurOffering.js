@@ -1,7 +1,7 @@
 import React from 'react';
-import DiamondCard from '../../components/DiamondCard/DiamondCard';
-import image1 from './Photos/Photo1.png';
-import image2 from './Photos/Photo2.png';
+import DiamondCard from '../components/DiamondCard';
+import image1 from '../assets/Photo1.png';
+import image2 from '../assets/Photo2.png';
 
 const offeringData = [
   {
