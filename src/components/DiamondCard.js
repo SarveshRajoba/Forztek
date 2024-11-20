@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const DiamondCard = ({ imageSrc, title }) => {
   return (
     <div className="flex flex-col items-center group relative mx-2 sm:mx-4">
@@ -32,5 +33,3 @@ const DiamondCard = ({ imageSrc, title }) => {
 };
 
 export default DiamondCard;
-
-

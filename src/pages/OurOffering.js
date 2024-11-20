@@ -36,7 +36,6 @@ const OurOffering = () => {
     </div>
   );
 };
-
 export default OurOffering;
 
 
