@@ -44,7 +44,7 @@ const OurProducts = () => {
         <img src={"/our_product.png"} alt="ourproducts" className="mx-auto" />
       </div>
       <div className="relative mr-28 overflow-hidden hover:overflow-y-auto h-[80vh] custom-scrollbar">
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid lg:grid-cols-2 gap-8 md:grid-cols-1">
           {productData.map((product, index) => (
             <ProductCard
               key={index}

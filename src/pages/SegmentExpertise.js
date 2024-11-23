@@ -1,4 +1,5 @@
 import React from "react";
+import manu_icon from "../assets/manufacture_icon.gif";
 import {
   Cog6ToothIcon, // Replaces CogIcon
   FireIcon,
@@ -14,7 +15,7 @@ const SegmentExpertise = () => {
       title: "General Machinery",
       description:
         "Efficient, durable machinery tailored to streamline and optimize industrial operations.",
-      icon: <Cog6ToothIcon className="h-8 w-8 text-black" />,
+      icon: {manu_icon},
     },
     {
       title: "Oil and Gas",
@@ -76,9 +77,10 @@ const SegmentExpertise = () => {
                 key={index}
                 className="flex flex-col items-start text-left p-4"
               >
-                <div className="flex items-center justify-center w-20 h-20 border-8 border-[#201E43] rounded-full mx-auto mb-4">
+                   <div className="flex items-center justify-center w-20 h-20 border-8 border-[#201E43] rounded-full mx-auto mb-4">
                   {service.icon}
                 </div>
+
                 <h3 className="text-xl font-bold text-gray-800 mb-2 mx-auto">
                   {service.title}
                 </h3>
@@ -95,4 +97,3 @@ const SegmentExpertise = () => {
 };
 
 export default SegmentExpertise;
-  

@@ -6,7 +6,7 @@ import Home from "./pages/home";
 import './App.css';
 import AboutUs from './pages/AboutUs';
 import ContactPage from './pages/ContactPage';
-import SegmentExpertise from './SegmentExpertise';
+import SegmentExpertise from './pages/SegmentExpertise';
 import OurProducts from './pages/OurProducts';
 import OurOffering from './pages/OurOffering';
 
