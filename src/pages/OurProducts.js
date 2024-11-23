@@ -35,16 +35,15 @@ import productData from "../data/Products_list"; // Import the product data
 
 const OurProducts = () => {
   return (
-    <div className="bg-forztek-blue h-screen flex items-center justify-between px-10">
+    <div className="bg-forztek-blue h-screen items-center justify-between px-10">
       <div>
         <div className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mt-20 text-left ml-10">
-          <span className="block">Our</span>
-          <span className="block">Products</span>
+          <span className="text-3xl">Our Products</span>
         </div>
-        <img src={"/our_product.png"} alt="ourproducts" className="mx-auto" />
+        {/* <img src={"/our_product.png"} alt="ourproducts" className="mx-auto" /> */}
       </div>
-      <div className="relative mr-28 overflow-hidden hover:overflow-y-auto h-[80vh] custom-scrollbar">
-        <div className="grid grid-cols-2 gap-6">
+      <div className="relative overflow-hidden hover:overflow-y-auto h-[80vh] custom-scrollbar mt-10 w-max mx-auto">
+        <div className="grid lg:grid-cols-3 gap-8 md:grid-cols-1">
           {productData.map((product, index) => (
             <ProductCard
               key={index}

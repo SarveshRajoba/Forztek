@@ -5,19 +5,29 @@ const productData = [
     description: "High-quality jigs and fixtures for precision manufacturing and assembly."
   },
   {
-    product_name: "Machine Parts",
-    image: "/jigs_fixtures.png",
+    product_name: "Bolt",
+    image: "/Bolt.png",
     description: "Durable and reliable machine parts for various industrial applications."
   },
   {
-    product_name: "Toolkits",
-    image: "/jigs_fixtures.png",
+    product_name: "Deep Groove Ball Bearing",
+    image: "/DeepGrooveBallBearing.jpg",
     description: "Comprehensive toolkits designed for efficient maintenance and repair work."
   },
   {
-    product_name: "Custom Machinery",
-    image: "/jigs_fixtures.png",
+    product_name: "Electric Mould",
+    image: "/electric-mould.png", //chnage the image or the image size
     description: "Bespoke machinery tailored to meet specific operational requirements."
+  },
+  {
+    product_name: "Hexagon bolts",
+    image: "/electric-mould.png",
+    description: "Bespoke machinery tailored to meet specific operational requirements."
+  },
+  {
+    product_name: "Welding Equipment",
+    image: "/jigs_fixtures.png",
+    description: "Advanced welding equipment for both industrial and commercial use."
   },
   {
     product_name: "Precision Tools",
