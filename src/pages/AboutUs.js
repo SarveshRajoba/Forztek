@@ -4,18 +4,10 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <div className="bg-white text-gray-900 px-6 py-6 max-w-screen mx-auto">
+    <div className="bg-white text-gray-900 px-6 py-6 min-h-screen mx-auto">
       {/* About Section */}
       <div className="mt-20 mb-20 flex flex-col md:flex-row items-center justify-between gap-6">
-        {/* About Us Image */}
-        {/* <div className="flex-shrink-0 mb-6 md:mb-0">
-          <img
-            src="/aboutUs_image.png"
-            alt="About Us"
-            className="w-[400px] h-[450px] object-cover"
-          />
-        </div> */}
-
+     
         <video
           className="flex-shrink-0  object-cover w-1/2 h-auto shadow-neutral-900 shadow-xl"
           src="/video.mp4" // Replace with your video path

@@ -29,6 +29,16 @@ const productData = [
     image: "/jigs_fixtures.png",
     description: "Advanced welding equipment for both industrial and commercial use."
   },
+  {
+    product_name: "Precision Tools",
+    image: "/jigs_fixtures.png",
+    description: "Precision-engineered tools for accurate measurements and high-quality results."
+  },
+  {
+    product_name: "Welding Equipment",
+    image: "/jigs_fixtures.png",
+    description: "Advanced welding equipment for both industrial and commercial use."
+  },
 ];
 
 export default productData;
