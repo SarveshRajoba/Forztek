@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import 'animate.css';
+// import 'animate.css';
 
 const DiamondCard = ({ imageSrc, title }) => {
   const [isVisible, setIsVisible] = useState(false);
