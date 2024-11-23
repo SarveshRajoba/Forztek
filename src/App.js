@@ -9,24 +9,14 @@ import ContactPage from './pages/ContactPage';
 import SegmentExpertise from './pages/SegmentExpertise';
 import OurProducts from './pages/OurProducts';
 import OurOffering from './pages/OurOffering';
-<<<<<<< HEAD
-import VisionMission from "./pages/vision_mission";
-=======
-import Line from "./components/Line"
+import VisionMission from './pages/vision_mission';
 
->>>>>>> 24e6eca5b84e726fe19864809f4acddea8cfcf90
 
 const App = () => {
   return (
     <div className="App">
-<<<<<<< HEAD
       <Navbar />
       <Home />
-=======
-      <Navbar/>
-      <Home/>
-      <Line/>
->>>>>>> 24e6eca5b84e726fe19864809f4acddea8cfcf90
       <AboutUs />
       <VisionMission />
       <OurOffering />
