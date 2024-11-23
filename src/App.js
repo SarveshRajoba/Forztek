@@ -9,17 +9,18 @@ import ContactPage from './pages/ContactPage';
 import SegmentExpertise from './SegmentExpertise';
 import OurProducts from './pages/OurProducts';
 import OurOffering from './pages/OurOffering';
-
+import VisionMission from "./pages/vision_mission";
 
 const App = () => {
   return (
     <div className="App">
-      <Navbar/>
-      <Home/>
+      <Navbar />
+      <Home />
       <AboutUs />
-      <OurOffering/>
+      <VisionMission />
+      <OurOffering />
       <SegmentExpertise />
-      <OurProducts/>
+      <OurProducts />
       <ContactPage />
     </div>
   );
