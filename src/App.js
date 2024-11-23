@@ -9,6 +9,7 @@ import ContactPage from './pages/ContactPage';
 import SegmentExpertise from './pages/SegmentExpertise';
 import OurProducts from './pages/OurProducts';
 import OurOffering from './pages/OurOffering';
+import Line from "./components/Line"
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
     <div className="App">
       <Navbar/>
       <Home/>
+      <Line/>
       <AboutUs />
       <OurOffering/>
       <SegmentExpertise />
