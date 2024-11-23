@@ -11,7 +11,6 @@ const OurProducts = () => {
         </div>
         <img src={'/our_product.png'} alt="ourproducts" className="mx-auto" />
       </div>
-
       <div className="mr-28">
         <Flashcard />
       </div>
