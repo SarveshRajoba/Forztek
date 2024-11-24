@@ -29,6 +29,22 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8">
+        <li>
+            {/* <a href="/services" className="hover:text-gray-400">
+              Engineering Services
+            </a> */}
+            <HashLink to="/#home" className="hover:text-gray-400">
+            Home
+            </HashLink>
+          </li>
+        <li>
+            {/* <a href="/services" className="hover:text-gray-400">
+              Engineering Services
+            </a> */}
+            <HashLink to="/#about" className="hover:text-gray-400">
+              About Us
+            </HashLink>
+          </li>
           <li>
             {/* <a href="/products" className="hover:text-gray-400">
               Products
@@ -37,14 +53,7 @@ const Navbar = () => {
               Products
             </HashLink>
           </li>
-          <li>
-            {/* <a href="/services" className="hover:text-gray-400">
-              Engineering Services
-            </a> */}
-            <HashLink to="/#about" className="hover:text-gray-400">
-              About Us
-            </HashLink>
-          </li>
+       
           <li>
             {/* <a href="/training" className="hover:text-gray-400">
               Training Solutions
