@@ -22,51 +22,50 @@ const Navbar = () => {
       <nav className="fixed top-0 left-0 right-0 w-full backdrop-filter backdrop-blur-lg backdrop-brightness-50 text-white flex items-center justify-between px-8 py-3 z-50 max-w-screen">
         <div className="flex flex-col items-center align-middle justify-center">
           <HashLink to="/#home">
-          <img src="/logo 3.png" alt="Forztek Logo" className="h-8 w-auto" />
-          <div className="font-bold h-5 text-blue-300">FORZTEK</div>
+            <img src="/logo 3.png" alt="Forztek Logo" className="h-8 w-auto" />
+            <div className="font-bold h-5 text-blue-300">FORZTEK</div>
           </HashLink>
         </div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8">
-        <li>
-            {/* <a href="/services" className="hover:text-gray-400">
-              Engineering Services
-            </a> */}
-            <HashLink to="/#home" className="hover:text-gray-400">
-            Home
+          <li>
+            <HashLink
+              to="/#home"
+              className="relative pb-1 hover:text-inherit after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-current after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform"
+            >
+              Home
             </HashLink>
           </li>
-        <li>
-            {/* <a href="/services" className="hover:text-gray-400">
-              Engineering Services
-            </a> */}
-            <HashLink to="/#about" className="hover:text-gray-400">
+          <li>
+            <HashLink
+              to="/#about"
+              className="relative pb-1 hover:text-inherit after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-current after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform"
+            >
               About Us
             </HashLink>
           </li>
           <li>
-            {/* <a href="/products" className="hover:text-gray-400">
-              Products
-            </a> */}
-            <HashLink to="/#products" className="hover:text-gray-400">
+            <HashLink
+              to="/#products"
+              className="relative pb-1 hover:text-inherit after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-current after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform"
+            >
               Products
             </HashLink>
           </li>
-       
           <li>
-            {/* <a href="/training" className="hover:text-gray-400">
-              Training Solutions
-            </a> */}
-            <HashLink to="/#training" className="hover:text-gray-400">
+            <HashLink
+              to="/#training"
+              className="relative pb-1 hover:text-inherit after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-current after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform"
+            >
               Training Solutions
             </HashLink>
           </li>
           <li>
-            {/* <a href="#about" className="hover:text-gray-400">
-              About Us
-            </a> */}
-            <HashLink to="/#contact" className="hover:text-gray-400">
+            <HashLink
+              to="/#contact"
+              className="relative pb-1 hover:text-inherit after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-current after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform"
+            >
               Contact
             </HashLink>
           </li>
