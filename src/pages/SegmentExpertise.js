@@ -1,5 +1,5 @@
 import React from "react";
-
+import Blueline from "../components/blueline";
 const SegmentExpertise = () => {
   // Updated services array with image paths from the assets folder
   const services = [
@@ -50,7 +50,8 @@ const SegmentExpertise = () => {
               <h2 className="text-3xl font-bold text-gray-800 mb-4">
                 Segment Expertise
               </h2>
-              <div className="w-2/4 bg-[#201E43] h-2 rounded-full my-6"></div>
+              <Blueline/>
+              {/* <div className="w-2/4 bg-[#201E43] h-2 rounded-full my-6"></div> */}
               <button
                 className="px-6 py-2 text-white rounded-[50px] hover:bg-[#4F46E5] transition-colors duration-300 my-3"
                 style={{

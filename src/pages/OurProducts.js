@@ -29,6 +29,7 @@
 
 // export default OurProducts;
 import React from "react";
+import Blueline from "../components/blueline";
 import ProductCard from "../components/ProductCard";
 import productData from "../data/Products_list"; // Import the product data
 // import '../App.css';
@@ -39,7 +40,9 @@ const OurProducts = () => {
       <div>
         <div className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mt-20 text-left ml-10">
           <span className="text-3xl">Our Products</span>
+          <Blueline/>
         </div>
+        
         {/* <img src={"/our_product.png"} alt="ourproducts" className="mx-auto" /> */}
       </div>
       <div className="relative overflow-hidden hover:overflow-y-auto h-[80vh] custom-scrollbar mt-10 w-max mx-auto">
