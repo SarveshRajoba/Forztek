@@ -10,8 +10,7 @@ import SegmentExpertise from './pages/SegmentExpertise';
 import OurProducts from './pages/OurProducts';
 import OurOffering from './pages/OurOffering';
 import VisionMission from './pages/vision_mission';
-import Line from "./components/Line"
-import Services from "./pages/Services"
+import Services from './pages/Services'
 
 
 const App = () => {
