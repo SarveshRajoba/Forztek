@@ -49,7 +49,7 @@ const ContactPage = () => {
       {popupMessage && (
         <div className="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex justify-center items-center z-50">
           <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-            <p className="text-xl font-semibold">{popupMessage}</p>
+            <p className="text-xl text-black font-semibold">{popupMessage}</p>
             <button
               onClick={() => setPopupMessage("")}
               className="mt-4 bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600"
@@ -62,103 +62,108 @@ const ContactPage = () => {
 
       {/* Main Content Section */}
       <div className="flex flex-col md:flex-row px-6 md:px-20 py-12 gap-6">
-  {/* Left Section (Contact Us and Map) */}
-  <div className="w-full md:w-3/5 flex flex-col">
-    <div className="mb-8 text-left group">
-      <h1 className="text-4xl md:text-6xl font-bold">Contact Us</h1>
-      <div className="mb-6">
-        <Line />
-      </div>
-      <div>
-        <p className="text-xl md:text-3xl text-gray-400 font-semibold mb-3">
-          Address:
-        </p>
-        <p className="ml-4 mb-2">Office: Pune City, Pune</p>
-        <p className="ml-4">Works: Pune City, Pune</p>
-      </div>
-      <div className="mt-6">
-        <p className="text-xl md:text-3xl text-gray-400 font-semibold mb-3">
-          Contact Details:
-        </p>
-        <p className="flex items-center">
-          <FontAwesomeIcon
-            icon={faPhoneAlt}
-            className="mr-2 ml-3 mb-2"
-          />{" "}
-          +91 924456545
-        </p>
-        <p className="flex items-center">
-          <FontAwesomeIcon
-            icon={faEnvelope}
-            className="mr-2 ml-3 mb-2"
-          />{" "}
-          mail@mail.com
-        </p>
-        <p className="flex items-center">
-          <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 ml-3" />{" "}
-          <a href="https://forztek.com" className="underline">
-            https://forztek.com
-          </a>
-        </p>
-      </div>
-    </div>
+        {/* Left Section (Contact Us and Map) */}
+        <div className="w-full md:w-3/5 flex flex-col">
+          <div className="mb-8 text-left group">
+            <h1 className="text-4xl md:text-6xl font-bold">Contact Us</h1>
+            <div className="mb-6">
+              <Line />
+            </div>
+            <div>
+              <p className="text-xl md:text-3xl text-gray-400 font-semibold mb-3">
+                Address:
+              </p>
+              <p className="ml-4 mb-2">Office: FORZTEK Solutions,
+                3rd floor, OZ plaza, Viman Nagar, Pune 411014.
+              </p>
+              <p className="ml-4">Works: FORZTEK Solutions,
+                JVMC+82M, Shri Gajanan Maharaj Nagar, Dighi, Pimpri-Chinchwad, Maharashtra 411039
+              </p>
+            </div>
+            <div className="mt-6">
+              <p className="text-xl md:text-3xl text-gray-400 font-semibold mb-3">
+                Contact Details:
+              </p>
+              <p className="flex items-center">
+                <FontAwesomeIcon
+                  icon={faPhoneAlt}
+                  className="mr-2 ml-3 mb-2"
+                />{" "}
+                +91 7829294600
+              </p>
+              <p className="flex items-center">
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  className="mr-2 ml-3 mb-2"
+                />{" "}
+                mahavir.kanwade@forztek.com
 
-    {/* Map Section */}
-    <div className="w-full mt-6">
-      <iframe
-        className="w-full h-48 md:h-72"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.720112676396!2d73.8567430154444!3d18.520430387397007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c07c5a45c871%3A0xe38b6a6a5a6fcb35!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1697236850985!5m2!1sen!2sin"
-        title="Google Map"
-        allowFullScreen
-        loading="lazy"
-      ></iframe>
-    </div>
-  </div>
+              </p>
+              <p className="flex items-center">
+                <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 ml-3" />{" "}
+                <a href="https://forztek.com" className="underline">
+                  https://forztek.com
+                </a>
+              </p>
+            </div>
+          </div>
 
-  {/* Right Section (Contact Form) */}
-  <div className="w-full md:w-2/5 bg-white bg-opacity-15 text-white p-6 rounded-lg shadow-lg">
-    <h2 className="text-xl md:text-2xl font-semibold mb-4 text-center">
-      Get a quote
-    </h2>
-    <form onSubmit={onSubmit}>
-      <input
-        type="text"
-        placeholder="Name"
-        name="name"
-        className="w-full p-3 mb-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
-      />
-      <input
-        type="email"
-        placeholder="Email"
-        name="Email"
-        className="w-full p-3 mb-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
-      />
-      <input
-        type="text"
-        placeholder="Company Name"
-        name="Company Name"
-        className="w-full p-3 mb-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
-      />
-      <input
-        type="text"
-        placeholder="Phone No."
-        name="Phone No."
-        className="w-full p-3 mb-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
-      />
-      <textarea
-        placeholder="Problem statement"
-        name="Message"
-        className="w-full p-3 mb-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 h-28"
-      ></textarea>
-      <button
-        type="submit"
-        className="w-full md:w-60 p-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition"
-      >
-        Submit
-      </button>
-    </form>
-  </div>
-</div>
+          {/* Map Section */}
+          <div className="w-full mt-6">
+            <iframe
+              className="w-full h-48 md:h-72"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.720112676396!2d73.8567430154444!3d18.520430387397007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c07c5a45c871%3A0xe38b6a6a5a6fcb35!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1697236850985!5m2!1sen!2sin"
+              title="Google Map"
+              allowFullScreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+
+        {/* Right Section (Contact Form) */}
+        <div className="w-full md:w-2/5 bg-white bg-opacity-15 text-white p-6 rounded-lg shadow-lg">
+          <h2 className="text-xl md:text-2xl font-semibold mb-4 text-center">
+            Get a quote
+          </h2>
+          <form onSubmit={onSubmit}>
+            <input
+              type="text"
+              placeholder="Name"
+              name="name"
+              className="w-full p-3 mb-4 border rounded-md text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              name="Email"
+              className="w-full p-3 mb-4 border rounded-md text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+            <input
+              type="text"
+              placeholder="Company Name"
+              name="Company Name"
+              className="w-full p-3 mb-4 border rounded-md text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+            <input
+              type="text"
+              placeholder="Phone No."
+              name="Phone No."
+              className="w-full p-3 mb-4 border rounded-md text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+            <textarea
+              placeholder="Problem statement"
+              name="Message"
+              className="w-full p-3 mb-4 border rounded-md text-black focus:outline-none focus:ring-2 focus:ring-blue-400 h-28"
+            ></textarea>
+            <button
+              type="submit"
+              className="w-full md:w-60 p-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
 
       {/* Shadow Line Between the Sections */}
       <div className="w-full h-[1px] bg-gray-400 mt-6"></div>
