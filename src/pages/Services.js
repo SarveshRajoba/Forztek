@@ -1,8 +1,9 @@
-import React from "react";
-import ServicesTable from "./ServicesTable";
+import React from 'react'
+import ServicesTable from './ServicesTable';
 import img1 from "../assets/services1.png";
 import img2 from "../assets/services2.png";
 import Line from "../components/Line";
+
 
 const Services = () => {
   return (
