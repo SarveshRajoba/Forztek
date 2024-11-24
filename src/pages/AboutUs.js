@@ -1,6 +1,7 @@
 // src/pages/AboutUs.js
 import React from "react";
-// import Blueline from "../components/blueline";
+// import Blueline from "../components/blueline";.
+import Blueline from "../components/blueline";
 
 const AboutUs = () => {
   return (
@@ -23,7 +24,8 @@ const AboutUs = () => {
             Creating Value, <span className="block">Together</span>
           </h1>
           <div>
-            <div className="w-32 h-1 mt-2 bg-blue-400 rounded-3xl mb-8 mx-auto md:mx-0"></div>
+            {/* <div className="w-32 h-1 mt-2 bg-blue-400 rounded-3xl mb-8 mx-auto md:mx-0"></div> */}
+            <Blueline/>
           </div>
           <p className="text-lg text-gray-600 text-justify leading-relaxed mt-4">
             At Forztek, we specialize in engineering solutions for rotating
