@@ -24,7 +24,7 @@ const App = () => {
       <OurOffering />
       <SegmentExpertise />
       <OurProducts />
-      <Services/>
+      <Services />
       <ContactPage />
     </div>
   );

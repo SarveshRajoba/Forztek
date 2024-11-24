@@ -1,8 +1,9 @@
-import React from "react";
-import ServicesTable from "./ServicesTable";
+import React from 'react'
+import ServicesTable from './ServicesTable';
 import img1 from "../assets/services1.png";
 import img2 from "../assets/services2.png";
 import Line from "../components/Line";
+
 
 const Services = () => {
   return (
@@ -18,8 +19,8 @@ const Services = () => {
           <ServicesTable />
         </div>
         <div className="mr-14 hidden lg:block">
-          <img className="p-3" src={img1} alt="Image 1" />
-          <img className="p-3" src={img2} alt="Image 2" />
+          <img className="p-3" src={img1} alt="Service 1" /> {/* Updated alt text */}
+          <img className="p-3" src={img2} alt="Service 2" /> {/* Updated alt text */}
         </div>
       </div>
     </div>
