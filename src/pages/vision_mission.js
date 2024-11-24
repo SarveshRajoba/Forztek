@@ -10,7 +10,7 @@ function VisionMission() {
                 <div className='mb-8'>
                     <Blueline/>
                 </div>
-                <p className="text-2xl  font-serif leading-relaxed text-center w-[250px]">
+                <p className="text-2xl  font-serif leading-relaxed text-left w-[250px] ">
                     A future where our solutions contribute to a reliable and sustainable green world.
                 </p>
             </div>
