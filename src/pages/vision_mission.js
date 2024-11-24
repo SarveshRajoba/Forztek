@@ -49,7 +49,7 @@ function VisionMission() {
     }, []); // Empty dependency array to run only once on mount
 
     return (
-        <div className="flex flex-col sm:flex-row h-auto sm:h-screen relative min-h-screen">
+        <div className="flex flex-col sm:flex-row h-auto sm:h-screen relative lg:min-h-screen">
             {/* Left Section (Vision) */}
             <div
                 ref={visionRef}
