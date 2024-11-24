@@ -88,34 +88,34 @@ const Navbar = () => {
           {isDropdownOpen && (
             <div className="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-black/90 ring-1 ring-black ring-opacity-5">
               <div className="py-2">
-                <a
-                  href="/products"
+                <HashLink
+                  to="/#products"
                   className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
                   onClick={() => setIsDropdownOpen(false)}
                 >
                   Products
-                </a>
-                <a
-                  href="/services"
-                  className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
-                  onClick={() => setIsDropdownOpen(false)}
-                >
-                  Engineering Services
-                </a>
-                <a
-                  href="/training"
-                  className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
-                  onClick={() => setIsDropdownOpen(false)}
-                >
-                  Training Solutions
-                </a>
-                <a
-                  href="/about"
+                </HashLink>
+                <HashLink
+                  to="/#about"
                   className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
                   onClick={() => setIsDropdownOpen(false)}
                 >
                   About Us
-                </a>
+                </HashLink>
+                <HashLink
+                  to="/#training"
+                  className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
+                  onClick={() => setIsDropdownOpen(false)}
+                >
+                  Training Solutions
+                </HashLink>
+                <HashLink
+                  to="/#contact"
+                  className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
+                  onClick={() => setIsDropdownOpen(false)}
+                >
+                  Contact
+                </HashLink>
               </div>
             </div>
           )}
