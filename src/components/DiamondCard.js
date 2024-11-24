@@ -17,13 +17,14 @@ const DiamondCard = ({ imageSrc, title }) => {
       { threshold: 0.5 }
     );
 
-    if (cardRef.current) {
-      observer.observe(cardRef.current);
+    const currentCard = cardRef.current; // Store ref value in a variable
+    if (currentCard) {
+      observer.observe(currentCard);
     }
 
     return () => {
-      if (cardRef.current) {
-        observer.unobserve(cardRef.current);
+      if (currentCard) {
+        observer.unobserve(currentCard); // Use the stored ref value in cleanup
       }
     };
   }, []);
@@ -47,9 +48,8 @@ const DiamondCard = ({ imageSrc, title }) => {
         {/* Bottom Section: Text */}
         <div
           className={`flex items-center justify-center h-20 sm:h-24 lg:h-28 bg-forztek-blue text-white font-slab font-black uppercase text-center 
-          text-xs sm:text-sm lg:text-base xl:text-base transition-opacity ${
-            isVisible ? 'animate__animated animate__fadeInUp' : 'opacity-0'
-          }`}
+          text-xs sm:text-sm lg:text-base xl:text-base transition-opacity ${isVisible ? 'animate__animated animate__fadeInUp' : 'opacity-0'
+            }`}
         >
           <span>{title}</span>
         </div>

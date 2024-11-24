@@ -4,34 +4,30 @@ import Blueline from "../components/blueline";
 
 const AboutUs = () => {
   const [animate, setAnimate] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false); // Track if animation has already occurred
 
   // Function to handle when the component is in view
   const handleInView = (inView) => {
-    setTimeout(() => {
-      if (inView) {
-        setAnimate(true); // Trigger animation when the component is in view
-      } else {
-        setAnimate(false); // Reset animation when it's out of view
-      }
-    }, 150);
+    if (inView && !hasAnimated) { // Trigger animation only once
+      setAnimate(true); // Trigger animation when the component comes into view
+      setHasAnimated(true); // Set that animation has already been triggered
+    }
   };
 
   return (
     <div className="bg-white text-gray-900 px-6 py-6 min-h-screen mx-auto">
       {/* About Section */}
-      <InView onChange={handleInView} triggerOnce={false}>
+      <InView onChange={handleInView} triggerOnce={true}> {/* triggerOnce ensures it's only checked once */}
         {/* About Us Image */}
         <div className="mt-20 mb-20 flex flex-col md:flex-row items-center justify-between gap-6">
           <img
-            className={`ml-10 flex-shrink-0 object-cover shadow-lg shadow-blue-500/50 w-[600px] h-[380px] rounded-lg transition-transform duration-1000 ${animate ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"
-              }`}
+            className={`ml-10 flex-shrink-0 object-cover shadow-lg shadow-blue-500/50 w-[600px] h-[380px] rounded-lg`}
             src="/aboutUs.jpg"
             alt="About Us"
           />
           {/* About Us Information */}
           <div
-            className={`mt-0 md:mt-0 max-w-xl text-center md:text-left md:ml-6 mr-10 transition-transform duration-1000 ${animate ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"
-              }`}
+            className={`mt-0 md:mt-0 max-w-xl text-center md:text-left md:ml-6 mr-10 transition-transform duration-1000 ${animate ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"}`}
           >
             <h1 className="text-4xl font-bold mb-3">
               Creating Value, <span className="block">Together</span>

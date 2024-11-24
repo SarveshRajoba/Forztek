@@ -76,8 +76,8 @@ const ContactPage = () => {
       <div className="relative -mt-24 sm:-mt-36 w-[500px] mx-auto">
         <div className="max-w-xl sm:max-w-4xl mx-auto p-6 sm:p-10 bg-white rounded-lg shadow-lg space-y-6 group">
           <div className="mx-auto w-max">
-          <h1 className="text-center text-2xl sm:text-3xl font-extrabold w-max  ">Contact us</h1>
-            <div className="  w-max"><Line/></div>
+            <h1 className="text-center text-2xl sm:text-3xl font-extrabold w-max  ">Contact us</h1>
+            <div className="  w-max"><Line /></div>
           </div>
           <form className="grid grid-cols-1 sm:grid-cols-2 gap-6" onSubmit={onSubmit}>
             <input
@@ -123,10 +123,12 @@ const ContactPage = () => {
       <footer className="bg-[#201E43] text-white py-8 mt-10">
         <div className="flex flex-col sm:flex-row justify-center items-center text-center sm:text-left space-y-4 sm:space-y-0 sm:space-x-8">
           <p className="flex items-center justify-center px-4">
-            <FontAwesomeIcon icon={faPhoneAlt} className="mr-2" /> +91 924456545
+            <FontAwesomeIcon icon={faPhoneAlt} className="mr-2" /> +91 7829294600
+
           </p>
           <p className="flex items-center justify-center px-4">
-            <FontAwesomeIcon icon={faEnvelope} className="mr-2" /> mail@mail.com
+            <FontAwesomeIcon icon={faEnvelope} className="mr-2" /> mahavir.kanwade@forztek.com
+
           </p>
           <p className="flex items-center justify-center px-4">
             <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" /> Pune City, Pune
