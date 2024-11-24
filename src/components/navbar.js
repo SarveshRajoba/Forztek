@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { HashLink, NavHashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -18,32 +19,47 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="fixed top-0 left-0 w-full backdrop-filter backdrop-blur-lg backdrop-brightness-50 text-white flex items-center justify-between px-8 py-3 z-50">
-        <div className="flex items-center">
-          <img src="/logo 3.png" alt="Forztek Logo" className="h-10 w-auto" />
+      <nav className="fixed top-0 left-0 right-0 w-full backdrop-filter backdrop-blur-lg backdrop-brightness-50 text-white flex items-center justify-between px-8 py-3 z-50 max-w-screen">
+        <div className="flex flex-col items-center align-middle justify-center">
+          <HashLink to="/#home">
+          <img src="/logo 3.png" alt="Forztek Logo" className="h-8 w-auto" />
+          <div className="font-bold h-5 text-blue-300">FORZTEK</div>
+          </HashLink>
         </div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8">
           <li>
-            <a href="/products" className="hover:text-gray-400">
+            {/* <a href="/products" className="hover:text-gray-400">
               Products
-            </a>
+            </a> */}
+            <HashLink to="/#products" className="hover:text-gray-400">
+              Products
+            </HashLink>
           </li>
           <li>
-            <a href="/services" className="hover:text-gray-400">
+            {/* <a href="/services" className="hover:text-gray-400">
               Engineering Services
-            </a>
-          </li>
-          <li>
-            <a href="/training" className="hover:text-gray-400">
-              Training Solutions
-            </a>
-          </li>
-          <li>
-            <a href="/about" className="hover:text-gray-400">
+            </a> */}
+            <HashLink to="/#about" className="hover:text-gray-400">
               About Us
-            </a>
+            </HashLink>
+          </li>
+          <li>
+            {/* <a href="/training" className="hover:text-gray-400">
+              Training Solutions
+            </a> */}
+            <HashLink to="/#training" className="hover:text-gray-400">
+              Training Solutions
+            </HashLink>
+          </li>
+          <li>
+            {/* <a href="#about" className="hover:text-gray-400">
+              About Us
+            </a> */}
+            <HashLink to="/#contact" className="hover:text-gray-400">
+              Contact
+            </HashLink>
           </li>
         </ul>
 
@@ -73,34 +89,34 @@ const Navbar = () => {
           {isDropdownOpen && (
             <div className="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-black/90 ring-1 ring-black ring-opacity-5">
               <div className="py-2">
-                <a
-                  href="/products"
+                <HashLink
+                  to="/#products"
                   className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
                   onClick={() => setIsDropdownOpen(false)}
                 >
                   Products
-                </a>
-                <a
-                  href="/services"
-                  className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
-                  onClick={() => setIsDropdownOpen(false)}
-                >
-                  Engineering Services
-                </a>
-                <a
-                  href="/training"
-                  className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
-                  onClick={() => setIsDropdownOpen(false)}
-                >
-                  Training Solutions
-                </a>
-                <a
-                  href="/about"
+                </HashLink>
+                <HashLink
+                  to="/#about"
                   className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
                   onClick={() => setIsDropdownOpen(false)}
                 >
                   About Us
-                </a>
+                </HashLink>
+                <HashLink
+                  to="/#training"
+                  className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
+                  onClick={() => setIsDropdownOpen(false)}
+                >
+                  Training Solutions
+                </HashLink>
+                <HashLink
+                  to="/#contact"
+                  className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
+                  onClick={() => setIsDropdownOpen(false)}
+                >
+                  Contact
+                </HashLink>
               </div>
             </div>
           )}

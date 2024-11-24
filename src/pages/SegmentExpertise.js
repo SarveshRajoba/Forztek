@@ -1,7 +1,6 @@
 import React from "react";
 import Line from "../components/Line";
 
-
 const SegmentExpertise = () => {
   // Updated services array with image paths from the assets folder
   const services = [
@@ -49,7 +48,7 @@ const SegmentExpertise = () => {
         <div className="flex flex-col md:flex-row items-center md:items-start justify-between">
           <div className="h-full w-full md:w-1/5 flex flex-col items-center justify-center text-left">
             <div className="h-full flex flex-col justify-center items-start group"> {/* Add group class here */}
-              <h2 className="text-3xl font-bold text-gray-800">
+              <h2 className="text-3xl font-bold text-gray-800 mb-4">
                 Segment Expertise
               </h2>
               <Line />  
