@@ -75,9 +75,9 @@ const ContactPage = () => {
       {/* Contact Form Section */}
       <div className="relative -mt-24 sm:-mt-36 w-[500px] mx-auto">
         <div className="max-w-xl sm:max-w-4xl mx-auto p-6 sm:p-10 bg-white rounded-lg shadow-lg space-y-6 group">
-          <h1 className="text-center text-2xl sm:text-3xl font-extrabold mb-6">Contact us</h1>
-          <div className="flex items-center justify-center">
-            <Line/>
+          <div className="mx-auto w-max">
+          <h1 className="text-center text-2xl sm:text-3xl font-extrabold w-max  ">Contact us</h1>
+            <div className="  w-max"><Line/></div>
           </div>
           <form className="grid grid-cols-1 sm:grid-cols-2 gap-6" onSubmit={onSubmit}>
             <input
