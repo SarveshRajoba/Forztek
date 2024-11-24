@@ -20,7 +20,7 @@ const Navbar = () => {
     <div>
       <nav className="fixed top-0 left-0 w-full backdrop-filter backdrop-blur-lg backdrop-brightness-50 text-white flex items-center justify-between px-8 py-3 z-50">
         <div className="flex items-center">
-          <img src="/logonew.png" alt="Forztek Logo" className="h-10 w-auto" />
+          <img src="/logo2.png" alt="Forztek Logo" className="h-10 w-auto" />
         </div>
 
         {/* Desktop Menu */}
