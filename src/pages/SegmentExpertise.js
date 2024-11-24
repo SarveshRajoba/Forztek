@@ -1,6 +1,7 @@
 import React from "react";
 import Line from "../components/Line";
 
+
 const SegmentExpertise = () => {
   // Updated services array with image paths from the assets folder
   const services = [

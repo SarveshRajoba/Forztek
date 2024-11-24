@@ -29,7 +29,6 @@
 
 // export default OurProducts;
 import React from "react";
-import Blueline from "../components/blueline";
 import ProductCard from "../components/ProductCard";
 import productData from "../data/Products_list"; // Import the product data
 // import '../App.css';

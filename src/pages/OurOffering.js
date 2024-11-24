@@ -2,6 +2,7 @@ import React from "react";
 import DiamondCard from "../components/DiamondCard";
 import Line from "../components/Line";
 
+
 const offeringData = [
   {
     imageSrc: "/Photo1.png",

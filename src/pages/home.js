@@ -39,7 +39,6 @@
 
 // export default Home;
 
-import Blueline from "../components/blueline";
 import "../index.css";
 import React from "react";
 import Line from "../components/Line";

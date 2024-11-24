@@ -1,6 +1,7 @@
 import React from "react";
 import Line from "../components/Line";
 
+
 const AboutUs = () => {
   return (
     <div className="bg-white text-gray-900 px-6 py-6 min-h-screen mx-auto">

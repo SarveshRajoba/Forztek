@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneAlt, faEnvelope, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
-import Blueline from "../components/blueline";
 import Line from "../components/Line";
 const ContactPage = () => {
   const [popupMessage, setPopupMessage] = useState("");
