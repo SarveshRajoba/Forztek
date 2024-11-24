@@ -29,19 +29,20 @@
 
 // export default OurProducts;
 import React from "react";
-import Blueline from "../components/blueline";
 import ProductCard from "../components/ProductCard";
 import productData from "../data/Products_list"; // Import the product data
 // import '../App.css';
+import Line from "../components/Line";
 
 const OurProducts = () => {
   return (
     <div className="bg-forztek-blue h-screen items-center justify-between px-10">
       <div>
-        <div className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mt-20 text-left ml-10">
+        <div className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mt-20 text-left ml-10 group">
           <span className="text-3xl">Our Products</span>
-          <Blueline/>
+          <Line/>
         </div>
+        
         
         {/* <img src={"/our_product.png"} alt="ourproducts" className="mx-auto" /> */}
       </div>
