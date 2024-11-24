@@ -1,3 +1,4 @@
+
 import React, { useRef, useEffect, useState } from 'react';
 
 function VisionMission() {
@@ -48,13 +49,13 @@ function VisionMission() {
     }, []); // Empty dependency array to run only once on mount
 
     return (
-        <div className="flex flex-col sm:flex-row h-auto sm:h-screen relative min-h-screen">
+        <div className="flex flex-col sm:flex-row h-auto sm:h-screen relative lg:min-h-screen">
             {/* Left Section (Vision) */}
             <div
                 ref={visionRef}
                 className={`w-full sm:w-1/2 bg-[#201E43] text-white flex flex-col justify-center items-center px-6 py-6 transition-all duration-1000 ${animateVision ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-5'}`}
             >
-                <h1 className="text-3xl sm:text-5xl font-serif font-semibold lg:mr-20 md:mr-20 lg:mb-4 md:mb-4 sm:mb-20 sm:mr-0 tracking-wider">
+                <h1 className="text-3xl sm:text-5xl font-serif font-semibold lg:mr-20 md:mr-20 lg:mb-4 md:mb-4 sm:mb-0 sm:mr-0 tracking-wider">
                     VISION
                 </h1>
                 <p className="text-base sm:text-2xl font-serif leading-relaxed text-center mt-5 sm:text-left w-[150px] lg:w-[280px] md:w-[280px]">
@@ -67,10 +68,10 @@ function VisionMission() {
                 ref={missionRef}
                 className={`w-full sm:w-1/2 bg-white text-black flex flex-col justify-center items-center px-6 py-6 transition-all duration-1000 ${animateMission ? 'opacity-100 -translate-x-0' : 'opacity-0 translate-x-1'}`}
             >
-                <h1 className="text-3xl sm:text-5xl font-serif font-semibold lg:mr-9 md:mr-9 lg:mb-4 md:mb-4 sm:mb-20 sm:mr-0 tracking-wider">
+                <h1 className="text-3xl sm:text-5xl font-serif font-semibold lg:mr-9 md:mr-9 lg:mb-4 md:mb-4 sm:mb-0 sm:mr-0 tracking-wider">
                     MISSION
                 </h1>
-                <p className="text-base sm:text-2xl font-serif leading-relaxed text-center mt-5 sm:text-left w-[150px] lg:w-[280px] md:w-[280px]">
+                <p className="text-base sm:text-2xl font-serif leading-relaxed text-center mt-5 sm:mb-0sm:text-left w-[150px] lg:w-[280px] md:w-[280px]">
                     To help customers & be the leader in innovative and sustainable solutions for rotating equipment.
                 </p>
             </div>
