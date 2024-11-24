@@ -46,7 +46,7 @@ import Line from "../components/Line";
 const Home = () => {
   return (
     <div>
-      <section
+      <section id="home"
         className="h-screen bg-cover bg-center flex items-center justify-between text-white text-center relative px-6 sm:px-8 md:px-12 lg:px-16"
       >
         <video

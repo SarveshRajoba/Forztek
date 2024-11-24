@@ -3,6 +3,7 @@ import "./index.css";
 import React from "react";
 import Navbar from "./components/navbar";
 import Home from "./pages/home";
+import { HashLink, NavHashLink } from 'react-router-hash-link';
 import './App.css';
 import AboutUs from './pages/AboutUs';
 import ContactPage from './pages/ContactPage';

@@ -45,7 +45,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#201E43]">
+    <div id="contact" className="min-h-screen bg-[#201E43]">
       {/* Popup Message */}
       {popupMessage && (
         <div className="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex justify-center items-center z-50">

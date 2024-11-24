@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { HashLink, NavHashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -20,30 +21,44 @@ const Navbar = () => {
     <div>
       <nav className="fixed top-0 left-0 w-full backdrop-filter backdrop-blur-lg backdrop-brightness-50 text-white flex items-center justify-between px-8 py-3 z-50 max-w-screen">
         <div className="flex items-center">
+          <HashLink to="/#home" className="hover:text-gray-400">
           <img src="/logo 3.png" alt="Forztek Logo" className="h-10 w-auto" />
+          </HashLink>
         </div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8">
           <li>
-            <a href="/products" className="hover:text-gray-400">
+            {/* <a href="/products" className="hover:text-gray-400">
               Products
-            </a>
+            </a> */}
+            <HashLink to="/#products" className="hover:text-gray-400">
+              Products
+            </HashLink>
           </li>
           <li>
-            <a href="/services" className="hover:text-gray-400">
+            {/* <a href="/services" className="hover:text-gray-400">
               Engineering Services
-            </a>
-          </li>
-          <li>
-            <a href="/training" className="hover:text-gray-400">
-              Training Solutions
-            </a>
-          </li>
-          <li>
-            <a href="/about" className="hover:text-gray-400">
+            </a> */}
+            <HashLink to="/#about" className="hover:text-gray-400">
               About Us
-            </a>
+            </HashLink>
+          </li>
+          <li>
+            {/* <a href="/training" className="hover:text-gray-400">
+              Training Solutions
+            </a> */}
+            <HashLink to="/#training" className="hover:text-gray-400">
+              Training Solutions
+            </HashLink>
+          </li>
+          <li>
+            {/* <a href="#about" className="hover:text-gray-400">
+              About Us
+            </a> */}
+            <HashLink to="/#contact" className="hover:text-gray-400">
+              Contact
+            </HashLink>
           </li>
         </ul>
 

@@ -36,7 +36,7 @@ import Line from "../components/Line";
 
 const OurProducts = () => {
   return (
-    <div className="bg-forztek-blue h-screen items-center justify-between px-10">
+    <div id="products" className="bg-forztek-blue h-screen items-center justify-between px-10">
       <div>
         <div className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mt-20 text-left ml-10 group">
           <span className="text-3xl">Our Products</span>
