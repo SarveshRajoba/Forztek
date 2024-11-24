@@ -52,7 +52,7 @@ function VisionMission() {
             {/* Left Section (Vision) */}
             <div
                 ref={visionRef}
-                className={`w-full sm:w-1/2 bg-[#201E43] text-white flex flex-col justify-center items-center px-6 py-6 transition-all duration-1000 ${animateVision ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}
+                className={`w-full sm:w-1/2 bg-[#201E43] text-white flex flex-col justify-center items-center px-6 py-6 transition-all duration-1000 ${animateVision ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-5'}`}
             >
                 <h1 className="text-3xl sm:text-5xl font-serif font-semibold lg:mr-20 md:mr-20 lg:mb-4 md:mb-4 sm:mb-20 sm:mr-0 tracking-wider">
                     VISION
@@ -65,7 +65,7 @@ function VisionMission() {
             {/* Right Section (Mission) */}
             <div
                 ref={missionRef}
-                className={`w-full sm:w-1/2 bg-white text-black flex flex-col justify-center items-center px-6 py-6 transition-all duration-1000 ${animateMission ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
+                className={`w-full sm:w-1/2 bg-white text-black flex flex-col justify-center items-center px-6 py-6 transition-all duration-1000 ${animateMission ? 'opacity-100 -translate-x-0' : 'opacity-0 translate-x-1'}`}
             >
                 <h1 className="text-3xl sm:text-5xl font-serif font-semibold lg:mr-9 md:mr-9 lg:mb-4 md:mb-4 sm:mb-20 sm:mr-0 tracking-wider">
                     MISSION

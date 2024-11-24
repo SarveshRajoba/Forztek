@@ -15,11 +15,11 @@ const AboutUs = () => {
   };
 
   return (
-    <div id="about" className="bg-white text-gray-900 px-6 py-6 min-h-screen mx-auto">
+    <div id="about" className="bg-white text-gray-900 px-6 py-2 min-h-screen mx-auto">
       {/* About Section */}
       <InView onChange={handleInView} triggerOnce={true}> {/* triggerOnce ensures it's only checked once */}
         {/* About Us Image */}
-        <div className="mt-20 mb-20 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="mt-40 mb-20 my-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <img
             className={`ml-10 flex-shrink-0 object-cover shadow-lg shadow-blue-500/50 w-[600px] h-[380px] rounded-lg`}
             src="/aboutUs.jpg"

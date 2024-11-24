@@ -47,10 +47,10 @@ const Home = () => {
   return (
     <div>
       <section id="home"
-        className="h-screen bg-cover bg-center flex items-center justify-between text-white text-center relative px-6 sm:px-8 md:px-12 lg:px-16"
+        className="h-screen bg-cover bg-center w-screen flex items-center justify-between text-white text-center relative px-6 sm:px-8 md:px-12 lg:px-16"
       >
         <video
-          className="absolute inset-0 object-cover w-full h-full"
+          className="absolute inset-0 object-cover w-screen h-full"
           src="/video.mp4" 
           autoPlay
           loop
