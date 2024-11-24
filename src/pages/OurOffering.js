@@ -1,15 +1,15 @@
-import React from 'react';
-import DiamondCard from '../components/DiamondCard';
-import Blueline from "../components/blueline";
+import React from "react";
+import DiamondCard from "../components/DiamondCard";
+import Line from "../components/Line";
 
 const offeringData = [
   {
-    imageSrc: '/Photo1.png',
-    title: 'Industrial Product Design,\n Manufacturing & Assembly',
+    imageSrc: "/Photo1.png",
+    title: "Industrial Product Design,\n Manufacturing & Assembly",
   },
   {
-    imageSrc: '/Photo2.png',
-    title: 'Engineering Services \n& Training',
+    imageSrc: "/Photo2.png",
+    title: "Engineering Services \n& Training",
   },
 ];
 
@@ -18,9 +18,12 @@ const OurOffering = () => {
     <div className="flex flex-col md:flex-row justify-between items-center p-10 bg-forztek-blue min-h-screen">
       {/* Left Side: Title */}
       <div className="flex flex-col items-start justify-center mb-10 md:mb-0 md:w-1/3">
-        <h1 className="text-5xl text-white font-bold mb-4 text-left">Our Offerings</h1>
-        {/* <div className="w-16 h-1 bg-blue-400 mb-8"></div> */}
-        <Blueline/>
+        <div className="group">
+          <h1 className="text-5xl text-white font-bold mb-4 text-left">
+            Our Offerings
+          </h1>
+          <Line />
+        </div>
       </div>
 
       {/* Right Side: Cards */}
@@ -38,4 +41,3 @@ const OurOffering = () => {
 };
 
 export default OurOffering;
-

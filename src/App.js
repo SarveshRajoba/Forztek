@@ -10,6 +10,7 @@ import SegmentExpertise from './pages/SegmentExpertise';
 import OurProducts from './pages/OurProducts';
 import OurOffering from './pages/OurOffering';
 import VisionMission from './pages/vision_mission';
+import Line from './components/Line'
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
       <SegmentExpertise />
       <OurProducts />
       <ContactPage />
+      <Line/>
     </div>
   );
 };

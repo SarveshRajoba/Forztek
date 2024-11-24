@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         'forztek-blue': '#201E43', // Adding your custom color
       },
+      
     },
   },
   plugins: [],
