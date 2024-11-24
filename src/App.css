@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
  
 }
 
@@ -49,9 +50,9 @@ body {
 }
 
 .custom-scrollbar {
-  overflow: auto; /* Ensure scrolling is enabled */
+  overflow: hidden; /* Ensure scrolling is enabled */
   scrollbar-width: none; /* Hide scrollbar in Firefox */
-  -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+  -ms-overflow-style: none;/* Hide scrollbar in IE and Edge */
 }
 
 .custom-scrollbar::-webkit-scrollbar {
