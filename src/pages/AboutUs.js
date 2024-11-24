@@ -4,7 +4,7 @@ import Line from "../components/Line";
 
 const AboutUs = () => {
   return (
-    <div className="bg-white text-gray-900 px-6 py-6 min-h-screen mx-auto">
+    <div className="bg-white text-gray-900 px-6 py-6 min-h-screen mx-auto ">
       {/* About Section */}
       <div className="mt-20 mb-20 flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Video Section */}

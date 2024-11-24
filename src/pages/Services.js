@@ -6,18 +6,15 @@ import Line from "../components/Line";
 
 const Services = () => {
   return (
-    <div className="min-h-screen">
-      <div>
-        <h1 className="font-serif text-4xl ml-20 mt-10 w-max ">
-          Services Offered
-        </h1>
-        <Line />
+    <div className="min-h-screen flex bg-white justify-center items-center">
+      <div className="w-max  text-4xl  ">
+         Services Offered
       </div>
-      <div className="flex justify mt-10">
-        <div className=" w-[1400px]">
+      <div className="flex mr-[100px] mt-[60px]">
+     
           <ServicesTable />
-        </div>
-        <div className="mr-14 hidden lg:block">
+        
+        <div className=" hidden lg:block">
           <img className="p-3" src={img1} alt="Image 1" />
           <img className="p-3" src={img2} alt="Image 2" />
         </div>

@@ -4,7 +4,7 @@ import Line from "../components/Line";
 
 function VisionMission() {
     return (
-        <div className="flex h-screen relative">
+        <div className="flex min-h-screen relative">
             {/* Left Section */}
             <div className="w-1/2 bg-[#201E43] text-white flex flex-col justify-center items-center px-6 py-6 group">
             <div>

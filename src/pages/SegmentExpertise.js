@@ -44,8 +44,8 @@ const SegmentExpertise = () => {
   ];
 
   return (
-    <section className="bg-white py-12 my-11 min-h-screen">
-      <div className="flex max-w-7xl mx-auto px-6 lg:px-8">
+    <div className=" min-h-screen flex ">
+      <div className="flex md:mx-auto w-[1300px] my-auto mx-[100px]">
         <div className="flex flex-col md:flex-row items-center md:items-start justify-between">
           <div className="h-full w-full md:w-1/5 flex flex-col items-center justify-center text-left">
             <div className="h-full flex flex-col justify-center items-start group"> {/* Add group class here */}
@@ -53,14 +53,7 @@ const SegmentExpertise = () => {
                 Segment Expertise
               </h2>
               <Line />  
-              <button
-                className="px-6 py-2 text-white rounded-[50px] hover:bg-[#4F46E5] transition-colors duration-300 my-3"
-                style={{
-                  background: "linear-gradient(90deg, #201E43 0%, #514CA9 100%)",
-                }}
-              >
-                View all services
-              </button>
+             
             </div>
           </div>
 
@@ -76,13 +69,13 @@ const SegmentExpertise = () => {
                 <h3 className="text-xl font-bold text-gray-800 mb-2">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 text-sm">{service.description}</p>
+                <p className="text-gray-600 text-sm w-[200px] md:w-[245px]">{service.description}</p>
               </div>
             ))}
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
