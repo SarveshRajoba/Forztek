@@ -49,10 +49,10 @@ const SegmentExpertise = () => {
         <div className="flex flex-col md:flex-row items-center md:items-start justify-between">
           <div className="h-full w-full md:w-1/5 flex flex-col items-center justify-center text-left">
             <div className="h-full flex flex-col justify-center items-start group"> {/* Add group class here */}
-              <h2 className="text-3xl font-bold text-gray-800 mb-4">
+              <h2 className="text-3xl font-bold text-gray-800">
                 Segment Expertise
               </h2>
-              <Line /> {/* Line animation will now work on hover of the h2 */}
+              <Line />  
               <button
                 className="px-6 py-2 text-white rounded-[50px] hover:bg-[#4F46E5] transition-colors duration-300 my-3"
                 style={{
