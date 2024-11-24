@@ -43,7 +43,7 @@ const SegmentExpertise = () => {
   ];
 
   return (
-    <section className="bg-white py-12 my-11 min-h-screen">
+    <section id="services" className="bg-white py-12 my-11 min-h-screen">
       <div className="flex max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center md:items-start justify-between">
           <div className="h-full w-full md:w-1/5 flex flex-col items-center justify-center text-left">

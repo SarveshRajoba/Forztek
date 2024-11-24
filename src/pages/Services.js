@@ -7,9 +7,9 @@ import Line from "../components/Line";
 
 const Services = () => {
   return (
-    <div className="min-h-screen">
+    <div  className="min-h-screen">
       <div>
-        <h1 className="font-serif text-4xl ml-20 mt-10 w-max ">
+        <h1 id="training" className="font-serif text-4xl ml-20 mt-10 w-max ">
           Services Offered
         </h1>
         <Line />

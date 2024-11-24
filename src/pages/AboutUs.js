@@ -15,7 +15,7 @@ const AboutUs = () => {
   };
 
   return (
-    <div className="bg-white text-gray-900 px-6 py-6 min-h-screen mx-auto">
+    <div id="about" className="bg-white text-gray-900 px-6 py-6 min-h-screen mx-auto">
       {/* About Section */}
       <InView onChange={handleInView} triggerOnce={true}> {/* triggerOnce ensures it's only checked once */}
         {/* About Us Image */}
