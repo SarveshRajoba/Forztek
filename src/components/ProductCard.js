@@ -4,7 +4,7 @@ import React from "react";
 
 const ProductCard = ({ img, title, description = "" }) => {
   return (
-    <div className="relative w-[350px] h-[238px] bg-[#181637] rounded-md group overflow-hidden shadow-lg shadow-black">
+    <div className="relative w-[350px] h-[238px] bg-[#181637] rounded-md shadow-md group overflow-hidden  shadow-black ">
       <div className="flex justify-between items-center">
       
         <div className="flex flex-col">

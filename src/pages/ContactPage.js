@@ -44,7 +44,8 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#201E43] text-white">
+    <div id="contact" className="min-h-screen bg-[#201E43] text-white">
+
       {/* Popup Message */}
       {popupMessage && (
         <div className="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex justify-center items-center z-50">
@@ -65,7 +66,7 @@ const ContactPage = () => {
         {/* Left Section (Contact Us and Map) */}
         <div className="w-full md:w-3/5 flex flex-col">
           <div className="mb-8 text-left group">
-            <h1 className="text-4xl md:text-6xl font-bold">Contact Us</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mt-[40px]">Contact Us</h1>
             <div className="mb-6">
               <Line />
             </div>
@@ -121,7 +122,7 @@ const ContactPage = () => {
         </div>
 
         {/* Right Section (Contact Form) */}
-        <div className="w-full md:w-2/5 bg-white bg-opacity-15 text-white p-6 rounded-lg shadow-lg">
+        <div className="w-full md:w-2/5 bg-white bg-opacity-15 text-white p-6 rounded-lg shadow-lg h-max mt-[100px]">
           <h2 className="text-xl md:text-2xl font-semibold mb-4 text-center">
             Get a quote
           </h2>
