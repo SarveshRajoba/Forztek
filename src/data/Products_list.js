@@ -10,8 +10,8 @@ const productData = [
     description: "Durable and reliable machine parts for various industrial applications."
   },
   {
-    product_name: "Deep Groove Ball Bearing",
-    image: "/DeepGrooveBallBearing.jpg",
+    product_name: "Ball Bearing",
+    image: "/DeepGrooveBallBearing.png",
     description: "Comprehensive toolkits designed for efficient maintenance and repair work."
   },
   {

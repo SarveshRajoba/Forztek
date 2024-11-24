@@ -10,6 +10,7 @@ import SegmentExpertise from './pages/SegmentExpertise';
 import OurProducts from './pages/OurProducts';
 import OurOffering from './pages/OurOffering';
 import Line from "./components/Line"
+import Services from "./pages/Services"
 
 
 const App = () => {
@@ -17,7 +18,7 @@ const App = () => {
     <div className="App">
       <Navbar/>
       <Home/>
-      <Line/>
+      <Services/>
       <AboutUs />
       <OurOffering/>
       <SegmentExpertise />
