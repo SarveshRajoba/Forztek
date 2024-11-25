@@ -7,9 +7,10 @@ import Line from "../components/Line";
 
 const Services = () => {
   return (
-    <div id="training" className="min-h-screen flex bg-white justify-center items-center">
+    <div id="training" className="min-h-screen flex group bg-white justify-center items-center">
       <div className="w-max  text-4xl  ">
          Services Offered
+         <Line/>
       </div>
       <div className="flex mr-[100px] mt-[60px]">
      

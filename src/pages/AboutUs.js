@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { InView } from 'react-intersection-observer'; // Import the InView component from react-intersection-observer
-import Blueline from "../components/blueline";
+import Line from "../components/Line";
 
 const AboutUs = () => {
   const [animate, setAnimate] = useState(false);
@@ -27,13 +27,13 @@ const AboutUs = () => {
           />
           {/* About Us Information */}
           <div
-            className={`mt-0 md:mt-0 max-w-xl text-center md:text-left md:ml-6 mr-10 transition-transform duration-1000 ${animate ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"}`}
+            className={`mt-0 group md:mt-0 max-w-xl text-center md:text-left md:ml-6 mr-10 transition-transform duration-1000 ${animate ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"}`}
           >
             <h1 className="text-4xl font-bold mb-3">
               Creating Value, <span className="block">Together</span>
             </h1>
-            <div>
-              <Blueline />
+            <div className="">
+              <Line />
             </div>
             <p className="text-lg text-gray-600 text-justify leading-relaxed mt-4">
               At Forztek, we specialize in engineering solutions for rotating
