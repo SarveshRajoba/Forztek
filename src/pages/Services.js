@@ -7,17 +7,22 @@ import Line from "../components/Line";
 
 const Services = () => {
   return (
-    <div id="training" className="min-h-screen flex bg-white justify-center items-center">
-      <div className="w-max  text-4xl  ">
-         Services Offered
+    <div id="training" className="min-h-screen md:flex group bg-white justify-center items-center">
+      <div className='ml-10 '>
+        <div className="text-4xl md:pt-0 pt-20">
+          <p>Services</p>
+            <p>Offered</p>
+        </div>
+         <Line/>
       </div>
-      <div className="flex mr-[100px] mt-[60px]">
+     
+      <div className="flex  mt-[60px] md:ml-[100px]">
      
           <ServicesTable />
         
-        <div className=" hidden lg:block">
-          <img className="p-3" src={img1} alt="Image 1" />
-          <img className="p-3" src={img2} alt="Image 2" />
+        <div className=" hidden lg:block ml-3">
+          <img className="w-3/4" src={img1} alt="Image 1" />
+          <img className="w-3/4 mt-11" src={img2} alt="Image 2" />
         </div>
       </div>
     </div>
