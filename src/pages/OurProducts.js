@@ -39,8 +39,8 @@ const OurProducts = () => {
   return (
     <div id="products" className="bg-forztek-blue min-h-screen items-center justify-between px-10 md:flex">
       <div>
-        <div className="text-3xl md:text-4xl lg:text-6xl font-bold text-white text-left ml-10 group ">
-          <span className="text-3xl  sm:mt-10 ">Our Products</span>
+        <div className="text-3xl md:text-4xl lg:text-6xl font-bold text-white text-left ml-10 group">
+          <div className="text-3xl md:pt-0 pt-20">Our Products</div>
           <Line/>
         </div>
       </div>

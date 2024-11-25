@@ -7,16 +7,16 @@ import Line from "../components/Line";
 
 const Services = () => {
   return (
-    <div id="training" className="min-h-screen flex group bg-white justify-center items-center">
+    <div id="training" className="min-h-screen md:flex group bg-white justify-center items-center">
       <div className='ml-10 '>
-        <div className="text-4xl ">
+        <div className="text-4xl md:pt-0 pt-20">
           <p>Services</p>
             <p>Offered</p>
         </div>
          <Line/>
       </div>
      
-      <div className="flex  mt-[60px] ml-[100px]">
+      <div className="flex  mt-[60px] md:ml-[100px]">
      
           <ServicesTable />
         
