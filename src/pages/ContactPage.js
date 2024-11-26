@@ -110,15 +110,17 @@ const ContactPage = () => {
           </div>
 
           {/* Map Section */}
-          <div className="w-full mt-6">
-            <iframe
-              className="w-full h-48 md:h-72"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.720112676396!2d73.8567430154444!3d18.520430387397007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c07c5a45c871%3A0xe38b6a6a5a6fcb35!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1697236850985!5m2!1sen!2sin"
-              title="Google Map"
-              allowFullScreen
-              loading="lazy"
-            ></iframe>
-          </div>
+          {/* Map Section */}
+<div className="w-full mt-6">
+  <iframe
+    className="w-full h-48 md:h-72"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.0038579585624!2d73.9146232!3d18.5636035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1414bc25d15%3A0xd483f44bda09bbf2!2sOz%20Plaza%2C%20Sakore%20Nagar%2C%20Viman%20Nagar%2C%20Pune%2C%20Maharashtra%20411014!5e0!3m2!1sen!2sin!4v1697236850985!5m2!1sen!2sin"
+    title="Google Map with Pin"
+    allowFullScreen
+    loading="lazy"
+  ></iframe>
+</div>
+
         </div>
 
         {/* Right Section (Contact Form) */}
@@ -157,11 +159,11 @@ const ContactPage = () => {
               className="w-full p-3 mb-4 border rounded-md text-black focus:outline-none focus:ring-2 focus:ring-blue-400 h-28"
             ></textarea>
             <button
-              type="submit"
-              className="w-full md:w-60 p-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition"
-            >
-              Submit
-            </button>
+  type="submit"
+  className="w-auto sm:w-40 md:w-60 p-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition"
+>
+  Submit
+</button>
           </form>
         </div>
       </div>

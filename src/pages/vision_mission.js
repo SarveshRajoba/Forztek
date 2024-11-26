@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import Line from "../components/Line";
 
+
 function VisionMission() {
     const [animateVision, setAnimateVision] = useState(false);
     const [animateMission, setAnimateMission] = useState(false);
@@ -80,7 +81,7 @@ function VisionMission() {
                 <img
                     src="/vision_mission.png"
                     alt="Vision and Mission Graphic"
-                    className="w-[400px] h-[400px] max-w-full max-h-full object-contain"
+                    className="w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] max-w-full max-h-full object-contain"
                 />
             </div>
         </div>
@@ -88,3 +89,4 @@ function VisionMission() {
 }
 
 export default VisionMission;
+

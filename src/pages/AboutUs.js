@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { InView } from 'react-intersection-observer'; // Import the InView component from react-intersection-observer
+import { InView } from "react-intersection-observer"; // Import the InView component from react-intersection-observer
 import Line from "../components/Line";
 
 const AboutUs = () => {
@@ -8,9 +8,9 @@ const AboutUs = () => {
 
   // Function to handle when the component is in view
   const handleInView = (inView) => {
-    if (inView && !hasAnimated) { // Trigger animation only once
-      setAnimate(true); // Trigger animation when the component comes into view
-      setHasAnimated(true); // Set that animation has already been triggered
+    if (inView && !hasAnimated) {
+      setAnimate(true);
+      setHasAnimated(true);
     }
   };
 
@@ -35,14 +35,8 @@ const AboutUs = () => {
             <div>
               <Line />
             </div>
-            <p className="text-lg text-gray-600 text-justify leading-relaxed mt-4">
-              At Forztek, we specialize in engineering solutions for rotating
-              applications, offering customized bearing arrangements for
-              gearboxes, fans, blowers, and high-speed drives. Our expertise
-              includes advanced simulations (FEA, CFD, CAE) and high-speed shaft
-              mode analysis to ensure performance and durability. We also provide
-              comprehensive CAD and CAE services, covering 3D modeling,
-              manufacturing drawings, and component strength analysis.
+            <p className="text-base sm:text-lg text-gray-600 text-justify leading-relaxed mt-4">
+              At Forztek, we specialize in engineering solutions for rotating applications, offering customized bearing arrangements for gearboxes, fans, blowers, and high-speed drives. Our expertise includes advanced simulations (FEA, CFD, CAE) and high-speed shaft mode analysis to ensure performance and durability. We also provide comprehensive CAD and CAE services, covering 3D modeling, manufacturing drawings, and component strength analysis.
             </p>
           </div>
         </div>
