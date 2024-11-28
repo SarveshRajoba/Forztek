@@ -1,6 +1,6 @@
-
 import React, { useRef, useEffect, useState } from 'react';
 import Line from "../components/Line";
+
 function VisionMission() {
     const [animateVision, setAnimateVision] = useState(false);
     const [animateMission, setAnimateMission] = useState(false);
@@ -58,10 +58,10 @@ function VisionMission() {
                 <h1 className="text-3xl sm:text-5xl font-serif font-semibold lg:mr-20 md:mr-20 lg:mb-4 md:mb-4 sm:mb-0 sm:mr-0 tracking-wider">
                     VISION
                 </h1>
-                <div className='flex -translate-x-20'>
-                    <Line/>
+                <div className="flex -translate-x-5 sm:-translate-x-20">
+                    <Line />
                 </div>
-                <p className="text-base sm:text-2xl font-serif leading-relaxed text-center mt-5 sm:text-left w-[150px] lg:w-[280px] md:w-[280px]">
+                <p className="text-base sm:text-2xl font-serif leading-relaxed text-center mt-5 sm:text-left w-[200px] sm:w-[280px]">
                     A future where our solutions contribute to a reliable and sustainable green world.
                 </p>
             </div>
@@ -71,13 +71,13 @@ function VisionMission() {
                 ref={missionRef}
                 className={`w-full sm:w-1/2 group bg-white text-black flex flex-col justify-center items-center px-6 py-6 transition-all duration-1000 ${animateMission ? 'opacity-100 -translate-x-0' : 'opacity-0 translate-x-1'}`}
             >
-                <h1 className="text-3xl  sm:text-5xl font-serif font-semibold lg:mr-9 md:mr-9 lg:mb-4 md:mb-4 sm:mb-0 sm:mr-0 tracking-wider">
+                <h1 className="text-3xl sm:text-5xl font-serif font-semibold lg:mr-9 md:mr-9 lg:mb-4 md:mb-4 sm:mb-0 sm:mr-0 tracking-wider">
                     MISSION
                 </h1>
-                <div className='flex -translate-x-20'>
-                    <Line/>
+                <div className="flex -translate-x-5 sm:-translate-x-20">
+                    <Line />
                 </div>
-                <p className="text-base sm:text-2xl font-serif leading-relaxed text-center mt-5 sm:mb-0sm:text-left w-[150px] lg:w-[280px] md:w-[280px]">
+                <p className="text-base sm:text-2xl font-serif leading-relaxed text-center mt-5 sm:text-left w-[200px] sm:w-[280px]">
                     To help customers & be the leader in innovative and sustainable solutions for rotating equipment.
                 </p>
             </div>
@@ -90,7 +90,7 @@ function VisionMission() {
                 <img
                     src="/vision_mission.png"
                     alt="Vision and Mission Graphic"
-                    className="w-[400px] h-[400px] max-w-full max-h-full object-contain"
+                    className="w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] max-w-full max-h-full object-contain"
                 />
             </div>
         </div>
