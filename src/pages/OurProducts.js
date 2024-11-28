@@ -40,7 +40,7 @@ const OurProducts = () => {
     <div id="products" className="bg-forztek-blue min-h-screen items-center justify-between px-10 md:flex ">
       <div>
         <div className="text-3xl md:text-4xl lg:text-6xl font-bold text-white text-left ml-10 group">
-          <div className="text-3xl text-white md:pt-0 pt-20">Our Products</div>
+          <div className="text-4xl md:text-5xl text-white md:pt-0 pt-20">Our Products</div>
           <Line />
         </div>
       </div>

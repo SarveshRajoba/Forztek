@@ -20,7 +20,7 @@ const OurOffering = () => {
       {/* Left Side: Title */}
       <div className="flex flex-col items-start justify-center mb-10 md:mb-0 md:w-1/3">
         <div className="group">
-          <h1 className="text-5xl text-white font-bold mb-4 text-left">
+          <h1 className="text-4xl md:text-5xl text-white font-bold mb-4 text-left">
             Our Offerings
           </h1>
           <Line />
