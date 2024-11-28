@@ -47,7 +47,7 @@ const DiamondCard = ({ imageSrc, title }) => {
 
         {/* Bottom Section: Text */}
         <div
-          className={`flex items-center justify-center h-20 sm:h-24 lg:h-28 bg-forztek-blue text-forztek-text font-slab font-black uppercase text-center 
+          className={`flex items-center justify-center h-20 sm:h-24 lg:h-28 bg-forztek-blue text-white font-slab font-black uppercase text-center 
           text-xs sm:text-sm lg:text-base xl:text-base transition-opacity ${isVisible ? 'animate__animated animate__fadeInUp' : 'opacity-0'
             }`}
         >

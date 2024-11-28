@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import Line from "../components/Line";
 
-
 function VisionMission() {
     const [animateVision, setAnimateVision] = useState(false);
     const [animateMission, setAnimateMission] = useState(false);
@@ -41,12 +40,13 @@ function VisionMission() {
 
     return (
         <div className="flex flex-col sm:flex-row h-auto sm:h-screen relative lg:min-h-screen">
+            {/* Vision Section */}
             <div
                 ref={visionRef}
                 className={`w-full group sm:w-1/2 bg-[#201E43] text-white flex flex-col justify-center items-center px-6 py-6 transition-all duration-1000 ${animateVision ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-5'
                     }`}
             >
-                <h1 className="text-3xl sm:text-5xl font-semibold lg:mr-20 md:mr-20 lg:mb-4 md:mb-4 sm:mb-0 sm:mr-0 tracking-wider">
+                <h1 className="text-4xl sm:text-5xl font-semibold lg:mr-20 md:mr-20 lg:mb-4 md:mb-4 sm:mb-0 sm:mr-0 tracking-wider">
                     VISION
                 </h1>
                 <div className="flex lg:-translate-x-20 md:-translate-x-20">
@@ -57,12 +57,13 @@ function VisionMission() {
                 </p>
             </div>
 
+            {/* Mission Section */}
             <div
                 ref={missionRef}
                 className={`lg:mt-8 md:mt-8 w-full sm:w-1/2 group bg-white text-black flex flex-col justify-center items-center px-6 py-6 transition-all duration-1000 ${animateMission ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-5'
                     }`}
             >
-                <h1 className="text-3xl sm:text-5xl font-semibold lg:mr-9 md:mr-9 lg:mb-4 md:mb-4 sm:mb-0 sm:mr-0 tracking-wider">
+                <h1 className="text-4xl sm:text-5xl font-semibold lg:mr-9 md:mr-9 lg:mb-4 md:mb-4 sm:mb-0 sm:mr-0 tracking-wider">
                     MISSION
                 </h1>
                 <div className="flex lg:-translate-x-20 md:-translate-x-20">
@@ -73,6 +74,7 @@ function VisionMission() {
                 </p>
             </div>
 
+            {/* Image Section */}
             <div
                 ref={imageRef}
                 className={`hidden sm:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none transition-all duration-1000 ${animateImage ? 'opacity-100 scale-100' : 'opacity-0 scale-50'
@@ -89,4 +91,3 @@ function VisionMission() {
 }
 
 export default VisionMission;
-

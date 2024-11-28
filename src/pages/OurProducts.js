@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 // import React from "react";
 // import ProductCard from "../components/ProductCard";
 // import productData from "../data/Products_list"; // Import the product data
@@ -8,7 +6,7 @@
 //   return (
 //     <div className="bg-forztek-blue h-screen flex items-center justify-between px-10">
 //       <div>
-//         <div className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mt-20 text-left ml-28">
+//         <div className="text-3xl md:text-4xl lg:text-6xl font-bold text-forztek-text mt-20 text-left ml-28">
 //           <span className="block">Our</span>
 //           <span className="block">Products</span>
 //         </div>
@@ -31,7 +29,6 @@
 
 // export default OurProducts;
 
->>>>>>> 9df619bdea667c963d56caf690d315570c8f69f0
 import React from "react";
 import ProductCard from "../components/ProductCard";
 import productData from "../data/Products_list"; // Import the product data
@@ -40,17 +37,11 @@ import Line from "../components/Line";
 
 const OurProducts = () => {
   return (
-    <div id="products" className="bg-forztek-blue min-h-screen items-center justify-between px-10 md:flex">
+    <div id="products" className="bg-forztek-blue min-h-screen items-center justify-between px-10 md:flex ">
       <div>
-<<<<<<< HEAD
-        <div className="text-3xl md:text-4xl lg:text-6xl font-bold text-white text-left ml-10 group ">
-          <span className="text-3xl  sm:mt-10 ">Our Products</span>
-          <Line />
-=======
         <div className="text-3xl md:text-4xl lg:text-6xl font-bold text-white text-left ml-10 group">
-          <div className="text-3xl md:pt-0 pt-20">Our Products</div>
-          <Line/>
->>>>>>> 9df619bdea667c963d56caf690d315570c8f69f0
+          <div className="text-3xl text-white md:pt-0 pt-20">Our Products</div>
+          <Line />
         </div>
       </div>
       <div className="relative  hover:overflow-y-auto h-[520px] custom-scrollbar mt-10 w-max mx-auto">
@@ -69,10 +60,6 @@ const OurProducts = () => {
   );
 };
 
-<<<<<<< HEAD
-export default OurProducts;
-=======
 export default OurProducts;
 
- 
->>>>>>> 9df619bdea667c963d56caf690d315570c8f69f0
+

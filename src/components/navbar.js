@@ -22,7 +22,7 @@ const Navbar = () => {
       <nav className="fixed top-0 left-0 right-0 w-full backdrop-filter backdrop-blur-lg backdrop-brightness-50 text-white flex items-center justify-between px-8 py-3 z-50 max-w-screen">
         <div className="flex flex-col items-center align-middle justify-center">
           <HashLink to="/#home">
-            <img src="/logo 3.png" alt="Forztek Logo" className="h-8 w-auto" />
+            <img src="/logo 3.png" alt="Forztek Logo" className="ml-5 h-8 w-auto" />
             <div className="font-bold h-5 text-blue-300">FORZTEK</div>
           </HashLink>
         </div>

@@ -20,11 +20,11 @@ const Services = () => {
       </div>
 
       {/* Right Section with Table and Images */}
-      <div className="flex mt-[60px] md:ml-[100px]">
+      <div className="flex mt-[60px] md:ml-[100px] gap-28">
         <ServicesTable />
         <div className="hidden lg:block ml-3">
-          <img className="w-3/4" src={img1} alt="Image 1" />
-          <img className="w-3/4 mt-11" src={img2} alt="Image 2" />
+          <img className="w-7/8" src={img1} alt="Image 1" />
+          <img className="w-7/8 mt-11" src={img2} alt="Image 2" />
         </div>
       </div>
     </div>
