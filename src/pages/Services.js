@@ -6,7 +6,7 @@ import Line from '../components/Line';
 
 const Services = () => {
   return (
-    <div id="training" className="min-h-screen md:flex group bg-white justify-center items-center">
+    <div id="training" className="min-h-screen md:flex group bg-white justify-center items-center px-7">
       {/* Left Section with Heading and Line */}
       <div className="ml-10 md:ml-0 text-center md:text-left">
         <div className="text-4xl md:text-5xl md:pt-0 pt-20">
