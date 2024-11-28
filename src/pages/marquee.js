@@ -36,8 +36,11 @@ const Companies = ({ company }) => (
 
 const MarqueeComponent = () => {
   return (
-    <div className="bg-white">
-      <h1 className="text-center text-4xl font-bold py-4">Our Clients</h1>
+    <div className="bg-white group">
+      <h1 className="text-center text-4xl font-bold ">Our Clients</h1>
+      <div className="flex justify-center items-center -translate-x-12 py-4">
+          <Line/>
+      </div>
       <Marquee
         gradient={true}
         gradientWidth={200}

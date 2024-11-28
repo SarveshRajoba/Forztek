@@ -32,7 +32,7 @@ const AboutUs = () => {
             <h1 className="text-3xl sm:text-4xl font-bold mb-3">
               Creating Value, <span className="block">Together</span>
             </h1>
-            <div className="flex justify-center md:justify-start ">
+            <div className="relative flex justify-center md:justify-start">
               <Line />
             </div>
             <p className="text-base sm:text-lg text-gray-600 text-justify leading-relaxed mt-4">
