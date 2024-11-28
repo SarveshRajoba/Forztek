@@ -12,6 +12,7 @@ import OurProducts from './pages/OurProducts';
 import OurOffering from './pages/OurOffering';
 import VisionMission from './pages/vision_mission';
 import Services from './pages/Services'
+import MarqueeComponent from "./pages/marquee";
 
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
       <SegmentExpertise />
       <OurProducts />
       <Services />
+      <MarqueeComponent />
       <ContactPage />
     </div>
   );
