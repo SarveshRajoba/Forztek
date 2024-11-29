@@ -16,22 +16,22 @@ function Flashcard() {
   useEffect(() => {
     const handleResize = () => {
       if ( window.innerWidth > 430 && window.innerWidth < 827) {
-        setSlidesToShow(1); 
-        setHeight(270);  
+        setSlidesToShow(1);
+        setHeight(270);
         setWidth(200);
         setDots(false);
         setArrows(true);
-      } 
+      }
       else if(window.innerWidth < 431){
-        setSlidesToShow(1); 
-        setHeight(270);  
+        setSlidesToShow(1);
+        setHeight(270);
         setWidth(200);
         setDots(true);
         setArrows(false);
       }
       else {
-        setSlidesToShow(3);  
-        setHeight(300);  
+        setSlidesToShow(3);
+        setHeight(300);
         setWidth(600);
         setDots(false);
         setArrows(true);
@@ -54,11 +54,11 @@ function Flashcard() {
   };
 
   return (
-    <div 
-    className={classNames(
-      " m-auto",
-      { [`w-[${width}px]`]: width }
-    )}
+    <div
+      className={classNames(
+        " m-auto",
+        { [`w-[${width}px]`]: width }
+      )}
     // className="w-[600px]   m-auto"
     >
       <div className="mt-20">
@@ -67,23 +67,23 @@ function Flashcard() {
             <div
               key={d.name}
               className="bg-forztek-blue h-[350px] text-white p-3"
-              // className={classNames(
+            // className={classNames(
               //   "bg-forztek-blue text-white p-3",
-              //   { [`h-[${height}px]`]: height }  // Dynamically set height using classNames
-              // )}
+            //   { [`h-[${height}px]`]: height }  // Dynamically set height using classNames
+            // )}
             >
               <div
                 className={classNames(
                   "bg-[#111024] justify-center items-center rounded-xl border",
                   { [`h-[${height}px]`]: height }
                 )}
-                //  className=" h-[300px] bg-[#111024] justify-center items-center rounded-xl border"
+              //  className=" h-[300px] bg-[#111024] justify-center items-center rounded-xl border"
               >
                 <div
-                   className="h-35 w-[120px] mx-auto mt-7"
+                  className="h-35 w-[120px] mx-auto mt-7"
                 >
                   <div className="h-32 "><img  src={d.img} alt="product_img" /></div>
-                 
+
                 </div>
                 <div className="mt-9 text-[20px]">{d.name}</div>
               </div>

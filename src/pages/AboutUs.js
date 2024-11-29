@@ -15,24 +15,24 @@ const AboutUs = () => {
   };
 
   return (
-    <div id="about" className="bg-white text-gray-900 px-6 py-10 min-h-screen mx-auto">
+    <div id="about" className="bg-white text-gray-900 px-6 py-2 lg:min-h-screen mx-auto">
       {/* About Section */}
-      <InView onChange={handleInView} triggerOnce={true}>
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 mt-20 mb-20">
-          {/* About Us Image */}
+      <InView onChange={handleInView} triggerOnce={true}> {/* triggerOnce ensures it's only checked once */}
+        {/* About Us Image */}
+        <div className="lg:mt-40 sm: mt-12 lg:mb-20 sm: mb-6 my-auto flex flex-col md:flex-row items-center justify-between gap-6 sm:[py-1]">
           <img
-            className="flex-shrink-0 object-cover shadow-lg shadow-blue-500/50 w-full max-w-md h-auto rounded-lg md:w-[50%]"
+            className={`hidden sm:block ml-10 flex-shrink-2 object-cover shadow-lg shadow-blue-500/50 w-[600px] h-[380px] rounded-lg`}
             src="/aboutUs.jpg"
             alt="About Us"
           />
           {/* About Us Information */}
           <div
-            className={`group max-w-xl text-center md:text-left transition-transform duration-1000 ${animate ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"}`}
+            className={`mt-0 group md:mt-0 max-w-xl md:text-left md:ml-6 sm: ml-6 mr-6 sm: mb-6 lg:mr-20 sm:mr-20 transition-transform duration-1000 ${animate ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"}`}
           >
-            <h1 className="text-3xl sm:text-4xl font-bold mb-3">
+            <h1 className="text-4xl md:text-5xl font-bold text-left mb-6">
               Creating Value, <span className="block">Together</span>
             </h1>
-            <div className="flex justify-center md:justify-start ">
+            <div>
               <Line />
             </div>
             <p className="text-base sm:text-lg text-gray-600 text-justify leading-relaxed mt-4">

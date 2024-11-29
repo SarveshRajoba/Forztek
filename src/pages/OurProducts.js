@@ -6,7 +6,7 @@
 //   return (
 //     <div className="bg-forztek-blue h-screen flex items-center justify-between px-10">
 //       <div>
-//         <div className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mt-20 text-left ml-28">
+//         <div className="text-3xl md:text-4xl lg:text-6xl font-bold text-forztek-text mt-20 text-left ml-28">
 //           <span className="block">Our</span>
 //           <span className="block">Products</span>
 //         </div>
@@ -37,11 +37,12 @@ import Line from "../components/Line";
 
 const OurProducts = () => {
   return (
-    <div id="products" className="bg-forztek-blue min-h-screen items-center justify-between px-10 md:flex text-black">
+    <div id="products" className="bg-forztek-blue min-h-screen items-center justify-between px-10 md:flex ">
       <div>
-        <div className="text-3xl md:text-4xl lg:text-6xl font-bold text-white text-left ml-10 group">
-          <div className="text-3xl md:pt-0 pt-20">Our Products</div>
-          <Line/>
+        <div className="text-3xl md:text-4xl lg:text-6xl font-bold text-white text-left group">
+          <div className="text-4xl md:text-5xl text-white md:pt-0 pt-20 w-max">Our</div>
+          <div className="text-4xl md:text-5xl text-white md:pt-0 pt-20 w-max">Products</div>
+          <Line />
         </div>
       </div>
       <div className="relative  hover:overflow-y-auto h-[520px] custom-scrollbar mt-10 w-max mx-auto">
@@ -62,4 +63,4 @@ const OurProducts = () => {
 
 export default OurProducts;
 
- 
+
